@@ -1,0 +1,19 @@
+@import-normalize;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+  padding: 0;
+	border: 0;
+	outline: none;
+  box-sizing: border-box;
+	text-decoration: none;
+	background: transparent;
+}
+
+body {
+	line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

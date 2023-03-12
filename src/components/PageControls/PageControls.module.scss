@@ -1,0 +1,45 @@
+.pageControls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 48px;
+
+  &Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+
+    &.active {
+      background: rgba(0, 0, 0, .05);
+    }
+
+    &Icon {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 784px) {
+  .pageControls {
+    gap: 16px;
+
+    &Button {
+      width: 36px;
+      height: 36px;
+      font-size: 12px;
+
+      &Icon {
+        font-size: 18px;
+      }
+    }
+  }
+}

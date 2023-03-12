@@ -1,0 +1,138 @@
+.character {
+  display: flex;
+  flex-direction: column;
+  margin: 76px auto 142px auto;
+  
+  &Portrait {
+    margin: 0 auto;
+    
+    &Image {
+      width: 300px;
+      height: 300px;
+      margin: 0 26px 16px;
+      border: 5px solid #f2f2f7;
+      border-radius: 50%;
+    }
+  }
+
+  &Name {
+    margin-bottom: 48px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: #081f32;
+  }
+
+  &Info {
+    margin: 0 auto 48px auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.15px;
+    color: #8e8e93;
+  }
+
+  &Data {
+    list-style: none;
+    margin: 0 auto;
+
+    &Item {
+      position: relative;
+      width: 413px;
+      margin: 0 32px 0 23px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 18px;
+        right: 0;
+        height: 1px;
+        background: rgba(33, 33, 33, 0.08);
+      }
+
+      &Heading {
+        margin: 9px 0 0 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+        color: #081f32;
+      }
+
+      &Text {
+        margin: 0 0 12px 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        color: #6e798C;
+      }
+    }
+  }
+}
+
+.return {
+  position: absolute;
+  top: 11px;
+  left: 42px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+
+  &Label {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+  }
+}
+
+@media (max-width: 468px) {
+  .character {
+    &Data {
+      margin: 0 32px 0 24px;
+
+      &Item {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 368px) {
+  .character {
+    margin: 124px auto 85px auto;
+
+    &Portrait {
+      &Image {
+        width: 150px;
+        height: 150px;
+        margin: 0 0 34px 0;
+      }
+    }
+
+    &Name {
+      margin-bottom: 34px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    &Info {
+      margin: 0 auto 16px 24px;
+    }
+  }
+
+  .return {
+    top: 15px;
+    left: 16px;
+  }
+}

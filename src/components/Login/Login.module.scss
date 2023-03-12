@@ -1,0 +1,67 @@
+.login {
+  position: absolute;
+  top: 11px;
+  right: 42px;
+  display: flex;
+  gap: 20px;
+  height: 45px;
+  padding: 12px;
+
+  &Profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    &Name {
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: #000;
+    }
+
+    &Photo {
+      width: 48px;
+      height: 48px;
+      border: 2px solid #f2f2f7;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &Link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+
+    &Icon {
+      font-size: 24px;
+      color: #000;
+    }
+  
+    &Label {
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: #000;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .login {
+    &Profile {
+      &Name {
+        display: none;
+      }
+    }
+
+    &Link {
+      &Label {
+        display: none;
+      }
+    }
+  }
+}

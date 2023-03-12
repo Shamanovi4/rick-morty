@@ -1,0 +1,101 @@
+.characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 210px;
+
+  &Image {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    max-height: 200px;
+    margin: 86px 0 16px 0;
+
+    img {
+      padding-left: 28px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &Search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    width: 100%;
+    height: 56px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 8px;
+
+    &Icon {
+      min-width: 24px;
+      min-height: 24px;
+      padding: 3px;
+    }
+
+    &Input {
+      width: 100%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, .5);
+    }
+  }
+
+  &List {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 24px;
+    margin: 61px 0 188px 0;
+  }
+}
+
+@media (max-width: 1456px) {
+  .characters {
+    &Search {
+      max-width: 760px;
+    }
+  }
+}
+
+@media (max-width: 1196px) {
+  .characters {
+    margin: 0 96px;
+  }
+}
+
+@media (max-width: 968px) {
+  .characters {
+    &Image {
+      max-width: 500px;
+    }
+    
+    &Search {
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 708px) {
+  .characters {
+    margin: 0 24px;
+  }
+}
+
+@media (max-width: 564px) {
+  .characters {
+    &Image {
+      max-width: 312px;
+    }
+    
+    &Search {
+      max-width: 312px;
+    }
+  }
+}
